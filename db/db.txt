@@ -1,0 +1,9 @@
+nama db = kasir
+tabel = user, pegawai, barang, penjualan, nota, absensi, pembelian
+user: id, username, password, role
+pegawai: id pegawai, nama pegawai, 
+barang : id barang, harga barang, harga_beli, harga_jual, stok
+penjualan :id penjualan,id nota, id barang, nama barang, jumlah, total_harga
+nota : id nota, total bayar, tanggal
+absensi : id_absensi, id pegawai, nama pegawai, tgl, waktu
+pembelian : id_pembelian, id barang, jumlah, tanggal

@@ -304,6 +304,11 @@ $jam = date('H:m:sa');
 
                                         }else{
                                         ?>
+                                        <div class="absen-b">
+                                            <a href="hapusPegawai.php?i=<?=$id_peg2?>">
+                                            <span class="title">Hapus</span>
+                                            </a>
+                                        </div>
                                         <div class="absen">
                                             <a href="hadir.php?s=y&i=<?=$id_peg2?>">
                                             <span class="title">Hadir</span>
@@ -317,7 +322,6 @@ $jam = date('H:m:sa');
                                         <?php
                                         }
                                         ?>
-                                        
                                     </div>
                                     </td>
                                 </tr>

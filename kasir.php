@@ -276,7 +276,7 @@ function rupiah($angka)
                                     <input type="hidden" name="nota" value="<?= $id_nota ?>">
                                     <input type="hidden" name="bayar" value="<?= $totalnota ?>">
                                     <label class="cardd">
-                                        <input type="submit" name="submit" class="subs2" value="Bayar">
+                                        <input type="submit" name="submit" class="subs2" value="Bayar & Cetak">
                                     </label>
                                 </div>
                             </form>

@@ -851,12 +851,6 @@ button.close {
     align-items: flex-start;
 }
 
-.absen:hover,
-.absen.hovered {
-    background: #237e49;
-    transition: .5s;
-}
-
 .absen a .title {
     position: relative;
     display: block;
@@ -868,15 +862,15 @@ button.close {
     
 }
 
-.absen a,
-.no-absen a {
-    text-decoration: none;
-}
-
-.no-absen:hover,
-.no-absen.hovered {
-    background: #7e2323;
-    transition: .5s;
+.absen-b a .title {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 100px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    
 }
 
 .no-absen a .title {
@@ -889,6 +883,34 @@ button.close {
     color: #fff;
 }
 
+.absen a {
+    text-decoration: none;
+}
+.no-absen a {
+    text-decoration: none;
+}
+.absen-b a {
+    text-decoration: none;
+}
+
+.absen:hover,
+.absen.hovered {
+    background: #237e49;
+    transition: .5s;
+}
+
+.absen-b:hover,
+.absen-b.hovered {
+    background: #7e7923;
+    transition: .5s;
+}
+
+.no-absen:hover,
+.no-absen.hovered {
+    background: #7e2323;
+    transition: .5s;
+}
+
 .status.ret {
     padding: 2px 10px;
     background: #e02c2c;
@@ -896,6 +918,15 @@ button.close {
     border-radius: 4px;
     font-size: 14px;
     font-weight: 1000;
+}
+
+.absen-b {
+    padding: 8px 5px;
+    margin-right: 10px;
+    background: #e0dd2c;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .absen {

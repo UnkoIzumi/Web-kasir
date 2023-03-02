@@ -1,7 +1,7 @@
 <?php
 session_start();
 include "koneksi.php";
-if ($_POST["submit"] == "Bayar") {
+if ($_POST["submit"] == "Bayar & Cetak") {
     // inisiasi
     $nota = $_POST["nota"];
     $bayar = $_POST["bayar"];

@@ -206,7 +206,7 @@ include "koneksi.php";
                                         <td><?=$nomor?></td>
                                         <td><?=$row["TANGGAL_PENJUALAN"]?></td>
                                         <td><?=$row["ID_NOTA"]?></td>
-                                        <td><?=$row["TOTAL_PENJUALAN"]?></td>
+                                        <td><?=rupiah($row["TOTAL_PENJUALAN"])?></td>
                                         <td>
                                         <button class="btnedit" data-target="#barang<?=$row["ID_NOTA"]?>">Detail</button>
                                                     <div class="model" id="barang<?=$row["ID_NOTA"]?>">

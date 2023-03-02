@@ -190,14 +190,14 @@ if(isset($_GET["alert"])){
                         <h2>Setting</h2>
                         <h4 class="btn">----</h4>
                     </div>
-                <div class="contain2">
+                <div class="containpeg">
                 <div class="txt_field">
                     <form action="Upass.php" method="post">
-                    <h4>Password Lama </h4>
+                    <h4 class="txtpas">Password Lama </h4>
                     <input class="in_txt" type="password" name = "plama"required>
-                    <h4>Password Baru </h4>
+                    <h4 class="txtpas">Password Baru </h4>
                     <input class="in_txt" type="password" name = "pbaru"required>
-                    <h4>Ulangi Password Baru</h4>
+                    <h4 class="txtpas">Ulangi Password Baru</h4>
                     <input class="in_txt" type="password" name="pbarukon" required>
                     <br>
                     <input type="submit" value="Submit" class="sub_pass">

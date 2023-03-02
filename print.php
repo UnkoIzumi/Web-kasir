@@ -99,6 +99,10 @@ include "koneksi.php";
             $query = "SELECT * FROM DETIL_NOTA INNER JOIN BARANG ON DETIL_NOTA.ID_BARANG = BARANG.ID_BARANG WHERE DETIL_NOTA.ID_NOTA = '$id_nota'";
             $hasil = mysqli_query($kon, $query);
             $belanja = 0;
+            function rupiah($angka){
+                $hasil_rp = "Rp " . number_format($angka,0,',','.');
+                return($hasil_rp);
+            }
             if (!$hasil) {
                 die("Query error:" . mysqli_errno($kon) . " - " . mysqli_error($kon));
             }
@@ -106,9 +110,9 @@ include "koneksi.php";
             ?>
                 <tr>
                     <td><?= $row["NAMA_BARANG"] ?></td>
-                    <td><?= $row["HARGA_JUAL"] ?></td>
+                    <td><?= rupiah($row["HARGA_JUAL"]) ?></td>
                     <td><?= $row["JUMLAH_BARANG"] ?></td>
-                    <td><?= $row["TOTAL_HARGA"] ?></td>
+                    <td><?= rupiah($row["TOTAL_HARGA"]) ?></td>
                 </tr>
             <?php
                 $belanja = $belanja + $row["TOTAL_HARGA"];
@@ -119,7 +123,7 @@ include "koneksi.php";
                     <p>Total Belanja: </p>
                 </td>
                 <td>
-                    <p><?= $belanja ?></p>
+                    <p><?= rupiah($belanja) ?></p>
                 </td>
             </tr>
         </tbody>

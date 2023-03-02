@@ -207,7 +207,7 @@ include "koneksi.php";
                                         <td><?=$row["TANGGAL_PEMBELIAN"]?></td>
                                         <td><?=$row["NAMA_BARANG"]?></td>
                                         <td><?=$row["JUMLAH_PEMBELIAN"]?></td>
-                                        <td><?=$row["TOTAL_BAYAR"]?></td>
+                                        <td><?=rupiah($row["TOTAL_BAYAR"])?></td>
                                     </tr>
                         <?php
                             $nomor++;

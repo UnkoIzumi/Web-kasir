@@ -332,17 +332,19 @@ body {
 
 .contain {
     width: auto;
-    height: 239px;
-    line-height: 2em;
+    height: 150px;
+    /* height: 239px; */
+    /* line-height: 2em; */
     overflow: scroll;
     border: thin rgb(255, 255, 255) solid;
-    padding: 5px;
-    margin-top: 20px;
+    /* padding: 5px; */
+    /* margin-top: 20px; */
 }
 
+/* ---------------------------- table untuk stok barang ---------------------------*/
 .tableContain {
     width: auto;
-    height: 380px;
+    height: 260px;
     line-height: 2em;
     overflow: scroll;
     border: thin rgb(255, 255, 255) solid;
@@ -358,9 +360,14 @@ body {
     padding: 10px;
 }
 
+.txtpas {
+    margin-bottom: -15px;
+}
+
 .txt_field input.in_txt {
     width: 70%;
     height: 30px;
+    margin-bottom: 5px;
     border-radius: 40px;
     padding: 5px 20px;
     padding-left: 35px;
@@ -380,11 +387,21 @@ body {
     border: 1px solid var(--grey);
 }
 
-.contain2 {
+/* ------------------------- table untuk outcome dan income ------------------------*/
+.contain2 { 
     width: auto;
-    height: 440px;
+    height: 320px;
     line-height: 3em;
     overflow: scroll;
+    border: thin rgb(255, 255, 255) solid;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.containpeg { 
+    width: auto;
+    height: 320px;
+    line-height: 3em;
     border: thin rgb(255, 255, 255) solid;
     padding: 5px;
     margin-top: 20px;
@@ -494,7 +511,8 @@ body {
 .harga {
     position: relative;
     width: 100%;
-    padding: 50px 100px;
+    text-align: center;
+    padding: 50px 50px 10px 150px;
 }
 
 .harga h4 {
@@ -514,7 +532,7 @@ body {
 }
 
 .data label input.subs1 {
-    width: 100px;
+    width: 200px;
     margin: 20px 0 0 0;
     border-radius: 30px;
     background: var(--green);
@@ -522,18 +540,25 @@ body {
 }
 
 .data label input.subs2 {
-    width: 100px;
+    /* width: 100px; */
     margin: 30px 0 0 0;
     border-radius: 30px;
     background: var(--green);
     transition: .5s;
 }
 
-.data label input.subs1:hover,
+.data label input.subs1:hover {
+    border-color: #56F1B9;
+    background: var(--red);
+    /* width: 150px; */
+    color: #ffffff;
+    transition: .5s;
+}
+
 .data label input.subs2:hover {
     border-color: #56F1B9;
     background: var(--red);
-    width: 110px;
+    /* width: 110px; */
     color: #ffffff;
     transition: .5s;
 }
@@ -923,7 +948,7 @@ button.close {
 .absen-b {
     padding: 8px 5px;
     margin-right: 10px;
-    background: #e0dd2c;
+    background: #febf00;
     border-radius: 20px;
     font-size: 14px;
     font-weight: 500;

@@ -231,9 +231,9 @@ function rupiah($angka)
                         <form action="aksi.php" method="post">
                             <div class="data">
                                 <label for="quantity">
-                                    <h4>Data Barang</h4>
-                                    <!-- <input type="text" placeholder="nama barang"> -->
-                                    <select name="product" id="barang" required>
+                                    <h4 style="margin-bottom: 5px;">Data Barang</h4>
+                                    <!-- <input type="text" placeholder="nama barang.."> -->
+                                    <select  style="width: 200px;" name="product" id="barang" required>
                                         <option></option>
                                         <?php
                                         include "koneksi.php";
@@ -250,7 +250,7 @@ function rupiah($angka)
                                     </select>
                                 </label>
                                 <label for="quantity">
-                                    <h4><br>Jumlah</h4>
+                                    <h4 style="margin-bottom: 5px; margin-top: 10px">Jumlah</h4>
                                     <input type="number" class="quantity" name="quantity" min="1" max="200" required>
                                 </label>
                                 <input type="hidden" name="id_nota" value="<?php echo $id_nota ?>">

@@ -260,8 +260,8 @@ include "koneksi.php";
                                         <tr>
                                             <td><?=$row["NAMA_BARANG"]?></td>
                                             <td><?=$row["DESKRIPSI_BARANG"]?></td>
-                                            <td>Rp<?=$row["HARGA_JUAL"]?></td>
-                                            <td>Rp<?=$row["HARGA_BELI"]?></td>
+                                            <td><?=rupiah($row["HARGA_JUAL"])?></td>
+                                            <td><?=rupiah($row["HARGA_BELI"])?></td>
                                             <td> Stok saat ini : <?=$row["STOK_BARANG"]?><br>
                                                 Tambahkan :<input type="number" class = "quantity" name="quantity"></td>
                                             <td>
@@ -295,7 +295,7 @@ include "koneksi.php";
                                                             <button class="close" data-target="#BR<?= $row["ID_BARANG"]?>">
                                                             Tutup
                                                             </button>
-                                                </div>       
+                                                </div>      
                                             </td>
                                         </tr>
                                         <?php

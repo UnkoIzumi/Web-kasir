@@ -19,6 +19,7 @@ include "koneksi.php";
             align-items: center;
             padding: 5px 5px;
             margin-top: 10px;
+            margin-bottom: 10px;
         }
         table {
             margin-top: 10px;
@@ -64,8 +65,18 @@ include "koneksi.php";
             font-size: 3.5vw;
         }
         .alltotal {
-            text-align: left;
+            text-align: right;
             font-size: 3.5vw;
+        }
+        .salam {
+            text-align: right;
+            font-size: 3.5vw;
+            margin-right: 50px;
+        }
+        .salam1 {
+            text-align: right; 
+            font-size: 3.5vw;
+            margin-right: 30px;
         }
         tr, td {
             border-bottom: 1px solid #ddd;
@@ -128,13 +139,15 @@ include "koneksi.php";
             </tr>
         </tbody>
     </table>
+    <br>
+    <p class="salam">Hormat Kami,</p>
     <br><br>
-    <p style="text-align: center;">Terima kasih</p>
+    <p class="salam1">(________________)</p>
 </body>
 <script>
     window.onload = function() {
         window.print();
-        setTimeout("window.close();", 3000);
+        setTimeout("window.close();", 1000);
     }
 </script>
 

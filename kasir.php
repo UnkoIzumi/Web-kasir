@@ -60,49 +60,37 @@ function rupiah($angka)
             <ul>
                 <li>
                     <a href="#">
-                        <span class="icon">
-                            <ion-icon name="person"></ion-icon>
-                        </span>
-                        <span class="title"><?= $_SESSION['nama'] ?></span>
+                        <span class="icon"><img src="Images\person.svg" name="person" style="margin-top: 12px" class="ion-icon"></span>
+                        <span class="title"><?= $_SESSION['nama']?></span>
                     </a>
                 </li>
                 <li>
                     <a href="kasir.php">
-                        <span class="icon">
-                            <ion-icon name="home"></ion-icon>
-                        </span>
+                        <span class="icon"><img src="Images\home.svg" name="home" style="margin-top: 12px" class="ion-icon"></span>
                         <span class="title">Dasboard</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="help"></ion-icon>
-                        </span>
+                    <a href="help.php">
+                        <span class="icon"><img src="Images\help.svg" name="help" style="margin-top: 12px" class="ion-icon"></span>
                         <span class="title">Bantuan</span>
                     </a>
                 </li>
                 <li>
                     <a href="absensi.php">
-                        <span class="icon">
-                            <ion-icon name="people"></ion-icon>
-                        </span>
+                        <span class="icon"><img src="Images\people.svg" name="people" style="margin-top: 12px" class="ion-icon"></span>
                         <span class="title">Absen Karyawan</span>
                     </a>
                 </li>
                 <li>
                     <a href="setting.php">
-                        <span class="icon">
-                            <ion-icon name="settings"></ion-icon>
-                        </span>
+                        <span class="icon"><img src="Images\settings.svg" name="settings" style="margin-top: 12px" class="ion-icon"></span>
                         <span class="title">Pengaturan</span>
                     </a>
                 </li>
                 <li>
                     <a href="logout.php">
-                        <span class="icon">
-                            <ion-icon name="log-out"></ion-icon>
-                        </span>
+                        <span class="icon"><img src="Images\logout.svg" name="logout" style="margin-top: 12px" class="ion-icon"></span>
                         <span class="title">Keluar</span>
                     </a>
                 </li>
@@ -113,7 +101,7 @@ function rupiah($angka)
         <div class="main">
             <div class="topbar">
                 <div class="toggle">
-                    <ion-icon name="menu"></ion-icon>
+                    <img src="Images\menu.svg" name="menu" class="ion-icon">
                 </div>
                 <!--Name-->
                 <div class="name_web">
@@ -323,7 +311,7 @@ function rupiah($angka)
                         <h2>Chart</h2>
                         <a href="#" class="btn">----</a>
                     </div>
-                    <canvas style="height : 200px;" id="penjualan"></canvas>
+                    <canvas style="height: 200px" id="penjualan"></canvas>
                     <?php
                     $bulan = [];
                     $no = 1;
@@ -337,10 +325,10 @@ function rupiah($angka)
                         $no++;
                     }
                     ?>
-                    <div class="contain">
+                    <div class="containchart">
                         <table>
                             <tr>
-                                <td width="60px">
+                                <td width="40px">
                                     <div class="chartBx"></div>
                                 </td>
                                 <td>
@@ -349,7 +337,7 @@ function rupiah($angka)
                             </tr>
 
                             <tr>
-                                <td width="60px">
+                                <td width="40px">
                                     <div class="chartBx"></div>
                                 </td>
                                 <td>
@@ -358,7 +346,7 @@ function rupiah($angka)
                             </tr>
 
                             <tr>
-                                <td width="60px">
+                                <td width="40px">
                                     <div class="chartBx"></div>
                                 </td>
                                 <td>
@@ -367,7 +355,7 @@ function rupiah($angka)
                             </tr>
 
                             <tr>
-                                <td width="60px">
+                                <td width="40px">
                                     <div class="chartBx"></div>
                                 </td>
                                 <td>
@@ -375,7 +363,7 @@ function rupiah($angka)
                                 </td>
                             </tr>
                             <tr>
-                                <td width="60px">
+                                <td width="40px">
                                     <div class="chartBx"></div>
                                 </td>
                                 <td>
@@ -383,7 +371,7 @@ function rupiah($angka)
                                 </td>
                             </tr>
                             <tr>
-                                <td width="60px">
+                                <td width="40px">
                                     <div class="chartBx"></div>
                                 </td>
                                 <td>
@@ -391,7 +379,7 @@ function rupiah($angka)
                                 </td>
                             </tr>
                             <tr>
-                                <td width="60px">
+                                <td width="40px">
                                     <div class="chartBx"></div>
                                 </td>
                                 <td>
@@ -399,7 +387,7 @@ function rupiah($angka)
                                 </td>
                             </tr>
                             <tr>
-                                <td width="60px">
+                                <td width="40px">
                                     <div class="chartBx"></div>
                                 </td>
                                 <td>
@@ -407,7 +395,7 @@ function rupiah($angka)
                                 </td>
                             </tr>
                             <tr>
-                                <td width="60px">
+                                <td width="40px">
                                     <div class="chartBx"></div>
                                 </td>
                                 <td>
@@ -415,7 +403,7 @@ function rupiah($angka)
                                 </td>
                             </tr>
                             <tr>
-                                <td width="60px">
+                                <td width="40px">
                                     <div class="chartBx"></div>
                                 </td>
                                 <td>
@@ -423,7 +411,7 @@ function rupiah($angka)
                                 </td>
                             </tr>
                             <tr>
-                                <td width="60px">
+                                <td width="40px">
                                     <div class="chartBx"></div>
                                 </td>
                                 <td>
@@ -431,7 +419,7 @@ function rupiah($angka)
                                 </td>
                             </tr>
                             <tr>
-                                <td width="60px">
+                                <td width="40px">
                                     <div class="chartBx"></div>
                                 </td>
                                 <td>

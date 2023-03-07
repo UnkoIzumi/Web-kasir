@@ -1,9 +1,19 @@
 <?php
 session_start();
-if(empty($_SESSION['username'])){
-    header("Location:index.php?error=invalid");
-}
 include "koneksi.php";
+$alert = "";
+if(isset($_GET["alert"])){
+    $alert = $_GET["alert"];
+    if($alert == "sukses"){
+        echo "<script>alert('Password berhasil diubah')</script>";
+    }
+    if($alert == "match"){
+        echo "<script>alert('Password gagal diubah, masukkan password baru dan ulangi dengan benar')</script>";
+    }
+    if($alert == "wrong"){
+        echo "<script>alert('Password gagal diubah, masukkan password lama dengan benar')</script>";
+    }
+}
 ?>
 <!DOCTYPE html>
 <html class="hydrated">
@@ -33,7 +43,7 @@ include "koneksi.php";
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="help.php">
                         <span class="icon"><img src="Images\help.svg" name="help" style="margin-top: 12px" class="ion-icon"></span>
                         <span class="title">Bantuan</span>
                     </a>
@@ -172,77 +182,18 @@ include "koneksi.php";
                 </div>
             </div>
 
-
             <!-- content -->
             <div class="details2">
                 <!-- Income -->
-                <div class="Outcome">
+                <div class="Income">
                     <div class="cardHeader">
-                        <h2>Outcome</h2>
+                        <h2>Help</h2>
                         <h4 class="btn">----</h4>
                     </div>
-                <div class="contain2">
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>No</td>
-                                <td>Tanggal</td>
-                                <td>Barang</td>
-                                <td>Jumlah Barang</td>
-                                <td>Total Biaya</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                        $nomor = 1;
-                        $query = "SELECT * FROM PEMBELIAN INNER JOIN BARANG ON PEMBELIAN.ID_BARANG = BARANG.ID_BARANG ORDER BY ID_PEMBELIAN DESC ";
-                        $hasil = mysqli_query($kon, $query);
-                        if(!$hasil){
-                            die("Query error:".mysqli_errno($kon)." - ".mysqli_error($kon));
-                        }
-                        while($row = mysqli_fetch_array($hasil)){
-                        ?>
-                                    <tr>
-                                        <td><?=$nomor?></td>
-                                        <td><?=$row["TANGGAL_PEMBELIAN"]?></td>
-                                        <td><?=$row["NAMA_BARANG"]?></td>
-                                        <td><?=$row["JUMLAH_PEMBELIAN"]?></td>
-                                        <td><?=rupiah($row["TOTAL_BAYAR"])?></td>
-                                    </tr>
-                        <?php
-                            $nomor++;
-                        }
-                        ?>
-                            <!-- <tr>
-                                <td>1</td>
-                                <td>25-12-2021</td>
-                                <td>Palu(BRG234)</td>
-                                <td>20</td>
-                                <td>Rp.1.000.000</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>25-12-2021</td>
-                                <td>Palu(BRG234)</td>
-                                <td>20</td>
-                                <td>Rp.1.000.000</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>25-12-2021</td>
-                                <td>Palu(BRG234)</td>
-                                <td>20</td>
-                                <td>Rp.1.000.000</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>25-12-2021</td>
-                                <td>Palu(BRG234)</td>
-                                <td>20</td>
-                                <td>Rp.1.000.000</td>
-                            </tr> -->
-                        </tbody>
-                    </table>
+                <div class="containpeg">
+                    <p>Pastikan XAMPP berjalan dengan baik untuk bisa berjalan. untuk panduan lengkapnya bisa dilihat pada link berikut:<br>
+                    Link: <a href="db\panduan-web-kasir.pdf" style="text-decoration: none;">Panduan penggunaan web kasir</a></p>
+                    <h4 style="width: 100%; bottom: 0; position: absolute; padding: 15px 0;">Powered by: @Ilham Fahmi AR</h4>
                 </div>
                 </div>
             </div>

@@ -22,37 +22,37 @@ include "koneksi.php";
             <ul>
                 <li>
                     <a href="#">
-                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <span class="icon"><img src="Images\person.svg" name="person" style="margin-top: 12px" class="ion-icon"></span>
                         <span class="title"><?= $_SESSION['nama']?></span>
                     </a>
                 </li>
                 <li>
                     <a href="kasir.php">
-                        <span class="icon"><ion-icon name="home"></ion-icon></span>
+                        <span class="icon"><img src="Images\home.svg" name="home" style="margin-top: 12px" class="ion-icon"></span>
                         <span class="title">Dasboard</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <span class="icon"><ion-icon name="help"></ion-icon></span>
+                        <span class="icon"><img src="Images\help.svg" name="help" style="margin-top: 12px" class="ion-icon"></span>
                         <span class="title">Bantuan</span>
                     </a>
                 </li>
                 <li>
                     <a href="absensi.php">
-                        <span class="icon"><ion-icon name="people"></ion-icon></span>
+                        <span class="icon"><img src="Images\people.svg" name="people" style="margin-top: 12px" class="ion-icon"></span>
                         <span class="title">Absen Karyawan</span>
                     </a>
                 </li>
                 <li>
                     <a href="setting.php">
-                        <span class="icon"><ion-icon name="settings"></ion-icon></span>
+                        <span class="icon"><img src="Images\settings.svg" name="settings" style="margin-top: 12px" class="ion-icon"></span>
                         <span class="title">Pengaturan</span>
                     </a>
                 </li>
                 <li>
                     <a href="logout.php">
-                        <span class="icon"><ion-icon name="log-out"></ion-icon></span>
+                        <span class="icon"><img src="Images\logout.svg" name="logout" style="margin-top: 12px" class="ion-icon"></span>
                         <span class="title">Keluar</span>
                     </a>
                 </li>
@@ -63,7 +63,7 @@ include "koneksi.php";
         <div class="main">
             <div class="topbar">
                 <div class="toggle">
-                    <ion-icon name="menu"></ion-icon>
+                    <img src="Images\menu.svg" name="menu" class="ion-icon">
                 </div>
                 <!--search-->
                 <div class="name_web">

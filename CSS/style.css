@@ -90,8 +90,16 @@ body {
     text-align: center;
 }
 
-.navigation ul li a .icon ion-icon {
+.navigation ul li a .icon .ion-icon {
     font-size: 1.75em;
+    height: 60%;
+    width: 60%;
+}
+
+.topbar .toggle .ion-icon {
+    font-size: 1.75em;
+    height: 60%;
+    width: 60%;
 }
 
 .navigation ul li a .title {
@@ -255,9 +263,9 @@ body {
     width: 100%;
     padding: 5px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.7fr 1.3fr;
     grid-gap: 30px;
-    /* margin-top: 10px; */
+    margin-top: 10px;
 }
 
 .details2 {
@@ -333,12 +341,21 @@ body {
 .contain {
     width: auto;
     height: 150px;
-    /* height: 239px; */
     /* line-height: 2em; */
     overflow: scroll;
     border: thin rgb(255, 255, 255) solid;
     /* padding: 5px; */
     /* margin-top: 20px; */
+}
+
+.containchart {
+    width: auto;
+    height: 120px;
+    line-height: 2em;
+    overflow: scroll;
+    border: thin rgb(255, 255, 255) solid;
+    /* padding: 5px; */
+    margin-top: -15px;
 }
 
 /* ---------------------------- table untuk stok barang ---------------------------*/
@@ -511,8 +528,8 @@ body {
 .harga {
     position: relative;
     width: 100%;
-    text-align: center;
-    padding: 50px 50px 10px 150px;
+    /* text-align: center; */
+    padding: 50px 50px 10px 130px;
 }
 
 .harga h4 {
@@ -580,11 +597,6 @@ body {
     position: relative;
 }
 
-.stok_input label.cardd ion-icon {
-    position: absolute;
-    left: 10px;
-    font-size: 1.2em;
-}
 
 .search {
     position: relative;
@@ -607,11 +619,13 @@ body {
     border: 1px solid var(--grey);
 }
 
-.search span.cardd ion-icon {
+.search span.cardd .ion-icon {
     position: absolute;
     top: 6px;
-    left: 12px;
+    left: 0px;
     font-size: 1.2em;
+    height: 55%;
+    width: 15%;
 }
 /* pop up */
 
@@ -661,6 +675,7 @@ body {
     border: none;
     cursor: pointer;
     outline: none;
+    text-align: center;
 }
 
 .open:hover {

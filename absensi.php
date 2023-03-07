@@ -21,37 +21,37 @@ $jam = date('H:m:sa');
             <ul>
                 <li>
                     <a href="#">
-                        <span class="icon"><ion-icon name="person" style="margin-top: 12px"></ion-icon></span>
+                        <span class="icon"><img src="Images\person.svg" name="person" style="margin-top: 12px" class="ion-icon"></span>
                         <span class="title"><?= $_SESSION['nama']?></span>
                     </a>
                 </li>
                 <li>
                     <a href="kasir.php">
-                        <span class="icon"><ion-icon name="home" style="margin-top: 12px"></ion-icon></span>
+                        <span class="icon"><img src="Images\home.svg" name="home" style="margin-top: 12px" class="ion-icon"></span>
                         <span class="title">Dasboard</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="help" style="margin-top: 12px"></ion-icon></span>
+                    <a href="help.php">
+                        <span class="icon"><img src="Images\help.svg" name="help" style="margin-top: 12px" class="ion-icon"></span>
                         <span class="title">Bantuan</span>
                     </a>
                 </li>
                 <li>
                     <a href="absensi.php">
-                        <span class="icon"><ion-icon name="people" style="margin-top: 12px"></ion-icon></span>
+                        <span class="icon"><img src="Images\people.svg" name="people" style="margin-top: 12px" class="ion-icon"></span>
                         <span class="title">Absen Karyawan</span>
                     </a>
                 </li>
                 <li>
                     <a href="setting.php">
-                        <span class="icon"><ion-icon name="settings" style="margin-top: 12px"></ion-icon></span>
+                        <span class="icon"><img src="Images\settings.svg" name="settings" style="margin-top: 12px" class="ion-icon"></span>
                         <span class="title">Pengaturan</span>
                     </a>
                 </li>
                 <li>
                     <a href="logout.php">
-                        <span class="icon"><ion-icon name="log-out" style="margin-top: 12px"></ion-icon></span>
+                        <span class="icon"><img src="Images\logout.svg" name="logout" style="margin-top: 12px" class="ion-icon"></span>
                         <span class="title">Keluar</span>
                     </a>
                 </li>
@@ -62,7 +62,7 @@ $jam = date('H:m:sa');
         <div class="main">
             <div class="topbar">
                 <div class="toggle">
-                    <ion-icon name="menu"></ion-icon>
+                    <img src="Images\menu.svg" name="menu" class="ion-icon">
                 </div>
                 <!--Name-->
                 <div class="name_web">
@@ -185,12 +185,11 @@ $jam = date('H:m:sa');
                     <div class="stok_input">
                         <label class="cardd">
                             <button class="open" data-target="#pegawaibaru">
-                            <ion-icon name="create"></ion-icon>
-                            Tambah Pegawai
+                                Tambah Pegawai
                             </button>
                                 <div class="model" id="pegawaibaru">
                                         <div class="header">
-                                        <h3>Tambah Pegawai</h3>
+                                            <h3>Tambah Pegawai</h3>
                                         </div>
                                         <div class = "stokpopup">
                                             <form action="pegawaibaru.php" method="post">
@@ -222,7 +221,6 @@ $jam = date('H:m:sa');
                                                     </div>
                                             </form>
                                         </div>
-                                        <br>
                                         <button class="close" data-target="#pegawaibaru">
                                         Tutup
                                         </button>

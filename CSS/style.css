@@ -891,28 +891,8 @@ button.close {
     align-items: flex-start;
 }
 
-.absen a .title {
-    position: relative;
-    display: block;
-    height: 20px;
-    width: 100px;
-    line-height: 20px;
-    text-align: center;
-    color: #fff;
-    
-}
-
-.absen-b a .title {
-    position: relative;
-    display: block;
-    height: 20px;
-    width: 100px;
-    line-height: 20px;
-    text-align: center;
-    color: #fff;
-    
-}
-
+.absen a .title,
+.absen-b a .title,
 .no-absen a .title {
     position: relative;
     display: block;
@@ -921,14 +901,11 @@ button.close {
     line-height: 20px;
     text-align: center;
     color: #fff;
+    
 }
 
-.absen a {
-    text-decoration: none;
-}
-.no-absen a {
-    text-decoration: none;
-}
+.absen a,
+.no-absen a,
 .absen-b a {
     text-decoration: none;
 }

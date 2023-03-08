@@ -193,7 +193,7 @@ if(isset($_GET["alert"])){
                 <div class="containpeg">
                     <p>Pastikan XAMPP berjalan dengan baik untuk bisa berjalan. untuk panduan lengkapnya bisa dilihat pada link berikut:<br>
                     Link: <a href="db\panduan-web-kasir.pdf" style="text-decoration: none;">Panduan penggunaan web kasir</a></p>
-                    <h4 style="width: 100%; bottom: 0; position: absolute; padding: 15px 0;">Powered by: @Ilham Fahmi AR</h4>
+                    <h4 style="width: 100%; bottom: 0; position: absolute; padding: 15px 0;">Powered by: @Fahmi AR</h4>
                 </div>
                 </div>
             </div>
